@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FCFCFC;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn-msg {
+    background-color: #F7567C;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: "Silkscreen", sans-serif; 
+    box-shadow: 2px 3px 0 #313131, 4px 6px 0 #252525;
+}
+
+.btn-msg:hover {
+    background-color: #f7809c;
+}
+
+.btn-msg:active {
+    box-shadow: 1px 2px 0 #313131, 3px 5px 0 #252525;
+    background-color: #c53557;
+}

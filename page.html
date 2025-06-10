@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Feliz dia dos Namorados</title>
+</head>
+
+<body>
+
+    <audio id="bg-music" src="media/musicaa.mp3" loop></audio>
+    <header>
+        <h1 class="feliz-dia">FELIZ DIA DOS NAMORADOS!</h1>
+    </header>
+
+    <div class="balon1">
+        <img src="media/baloon.png" alt="" class="balon">
+
+        <div class="container">
+            <p class="textin">Quero que você saiba que eu te amo muito minha princesa, isso é uma amostra de que até
+                estudando ou trabalhando eu estou pensando em você!</p>
+
+            <img src="media/frog.png" alt="" class="sapin">
+        </div>
+    </div>
+
+    <div class="arraste">
+        <img src="media/heart.png" alt="" class="coracaozin">
+        <h2>ARRASTE</h2>
+    </div>
+
+    <div class="playerzin">
+        <h2 class="ouve">OUVE UMA MUSIQUINHA AÍ</h2>
+        <img src="media/gamezin.png" alt="" class="gamezin">
+
+        <button id="music-btn" onclick="toggleMusic()" class="botaoo">
+            <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="30" height="30">
+                <path fill="#221d18"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+            </svg>
+            <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="30" height="30"
+                style="display: none;">
+                <path fill="#221d18"
+                    d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48s48-21.5 48-48V112C96 85.5 74.5 64 48 64zM272 64c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48s48-21.5 48-48V112c0-26.5-21.5-48-48-48z" />
+            </svg>
+        </button>
+
+    </div>
+    </div>
+
+    <h2 class="clica">CLICA PAR VER A MENSAGEN</h2>
+<div class="cardes">
+  <div class="card" onclick="flipCard(this)">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="media/garibel.png" alt="" class="pixelart">
+      
+    </div>
+    <div class="card-back">
+      <p class="textin2">VOCÊ É O BUG...</p>
+    </div>
+  </div>
+</div>
+
+<div class="card" onclick="flipCard(this)">
+  <div class="card-inner">
+    <div class="card-front">
+      <img src="media/stefany.png" alt="" class="pixelart">
+      
+    </div>
+    <div class="card-back">
+      <p class="textin2">...QUE EU JAMAIS QUERO CONCERTAR!</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<h1 class="euteamo">EU TEEE AMOOOO</h1>
+
+    <script>
+        const music = document.getElementById("bg-music");
+        const btn = document.getElementById("music-btn");
+        const iconPlay = document.getElementById("icon-play");
+        const iconPause = document.getElementById("icon-pause");
+
+        function toggleMusic() {
+            if (music.paused) {
+                music.play();
+                iconPlay.style.display = "none";
+                iconPause.style.display = "inline";
+            } else {
+                music.pause();
+                iconPlay.style.display = "inline";
+                iconPause.style.display = "none";
+            }
+        }
+
+         function flipCard(cardElement) {
+    cardElement.classList.toggle('flipped');
+  }
+
+  function flipCard(cardElement) {
+    cardElement.classList.toggle('flipped');
+  }
+
+    </script>
+</body>
+
+</html>

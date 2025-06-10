@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+  background: linear-gradient(45deg, #99E1D9, #5271ff);
+  background-size: 400% 400%;
+  animation: gradientAnimation 2s ease infinite;
+}
+
+/* Animação do fundo gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.feliz-dia {
+    font-family: "Silkscreen", sans-serif;
+    ;
+    color: #ffff;
+    text-shadow: 2px 2px 2px #000000a4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 400px;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.textin {
+    color: #F7567C;
+    text-align: center;
+    font-size: 12px;
+    max-width: 200px;
+    font-family: "Silkscreen", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+}
+
+.balon {
+    z-index: -1;
+    position: absolute;
+    margin: 0 auto;
+    top: 70px;
+    right: -1px;
+    left: 3px;
+    max-width: 300px;
+}
+
+.balon1,
+.balon {
+    padding-top: 100px;
+}
+
+.sapin {
+    width: 100px;
+    position: absolute;
+    top: 148px;
+}
+
+.arraste {
+    display: flex;
+    flex-direction: column;
+    padding-top: 195px;
+}
+
+.arraste,
+h2 {
+    font-family: "Silkscreen", sans-serif;
+    ;
+    color: #ffff;
+    text-shadow: 2px 2px 2px #000000a4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: 20px;
+
+}
+
+.ouve {
+    padding-bottom: 30px;
+}
+
+.coracaozin {
+    width: 100px;
+    margin: 0 auto;
+    animation: beat .30s infinite alternate;
+    transform-origin: center;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.playerzin {
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.playerzin,
+.gamezin {
+    width: 300px;
+}
+
+
+.botaoo {
+    background-color: #ff66c4;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #221d18;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 58px;
+    right: 78px;
+    padding: 10px 20px;
+    transform: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 0 auto;
+
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-front, .card-back .textin2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    max-width: 200px;
+    font-family: "Silkscreen", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+}
+
+.card-back {
+  background-color: #5271ff;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.pixelart {
+    width: 80px;
+}
+
+
+.cardes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 30px;
+}
+
+.clica {
+    padding-top: 100px;
+}
+
+
+.euteamo {
+    font-family: "Silkscreen", sans-serif;
+    ;
+    color: #ffff;
+    text-shadow: 2px 2px 2px #000000a4;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    font-size: 50px;
+}
